@@ -107,4 +107,34 @@ body {
 .post-tags p {
   margin: 0 10px 0 0;
 }
+
+/* Tags */
+.tag-size-1 {
+  font-size: 60%;
+  color: red;
+}
+
+.tag-size-2 {
+  font-size: 90%;
+  color: blue;
+}
+
+.tag-size-3 {
+  font-size: 120%;
+  color: green;
+}
+
+.tag-size-4 {
+  font-size: 160%;
+  color: black;
+}
+
+.tag-size-5 {
+  font-size: 200%;
+  color: purple;
+}
+
+.sidebar .tags li {
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
