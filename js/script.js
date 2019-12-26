@@ -152,7 +152,7 @@
       activeTag.classList.remove('active');
     }
 
-    const tagLinks = clickedElement.querySelectorAll('href');
+    const tagLinks = document.querySelectorAll('a[href^="#tag-' + tag + '"]');
 
     for(let tagLink of tagLinks){
 
@@ -163,15 +163,16 @@
 
   function addClickListenersToTags(){
 
-    const links = document.querySelectorAll('.list-horizontal a');
+    const links = document.querySelectorAll('.list-horizontal a' + ',' + '.tags a');
 
     for( let link of links){
 
       link.addEventListener('click',tagClickHandler);
     }
-  }
 
+  }
   addClickListenersToTags();
+
 
   function generateAuthors(){
 
@@ -243,7 +244,7 @@
   }
 
   function addClickListenersToAuthors(){
-    const authorLinks = document.querySelectorAll('.post-author a');
+    const authorLinks = document.querySelectorAll('.post-author a' + ',' + '.authors a');
 
     for( let author of authorLinks){
 
